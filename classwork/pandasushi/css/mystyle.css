@@ -1,0 +1,9 @@
+.container{
+    width: 70%;
+}
+.header{
+    width:100%;
+    
+    background-image: url("../images/desk-header-bg.png");
+background-color: blue;
+}
