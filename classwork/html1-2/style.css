@@ -1,0 +1,23 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery__small .gallery__item{
+    max-width: 49%;
+}
+.gallery__small .gallery__item img{
+    width:100%;
+
+    object-fit: contain;
+}
+.gallery__small{
+    max-width: 49.8%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.gallery__big.gallery__item{
+    max-width: none;
+}
