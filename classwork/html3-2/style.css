@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.header {
+    width: 100%;
+    height: 7vw;
+    background-color: lime;
+}
+
+.nav {
+    width: 100%;
+    height: 3vw;
+    background-color: #b768ff;
+}
+.mainBox{
+    height: 15vw;
+}
+.main{
+    flex-grow: 4;
+    background-color: yellow;
+}
+.aside{
+    flex-grow: 1;
+    background-color: burlywood;
+}
+.footer{
+    background-color: darkcyan;
+    width: 100%;
+    height: 7vw;
+}

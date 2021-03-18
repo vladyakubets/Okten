@@ -1,0 +1,38 @@
+.flex{
+    display: flex;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80vw;
+}
+.header{
+    width: 100%;
+    height: 7vw;
+    background-color: lime;
+}
+
+.main{
+    background-color: green;
+    height: 15vw;
+}
+
+.menu{
+    flex-grow: 1;
+    background-color: yellow;
+}
+
+.main__content{
+    flex-grow: 3;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.post{
+    background-color: aquamarine;
+    flex-grow: 1;
+}
+.footer{
+    height: 7vw;
+    background-color: darkorange;
+}
