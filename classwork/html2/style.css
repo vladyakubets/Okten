@@ -1,0 +1,54 @@
+.container{
+    margin-left: 150px;
+}
+h1,h2{
+    margin-bottom: 0;
+}
+hr{
+    margin-top: 3px;
+}
+.container{
+    font-family: sans-serif;
+
+}
+p{
+    line-height: 26px;
+}
+.main-top > span{
+    font-weight: 300;
+}
+.content{
+    width: 200px;
+    background-color: #e1ebff;
+    padding: 1px 2px 3px;
+    border: darkslategray solid 1px;
+}
+.content h2{
+    font-size: small;
+    text-align: center;
+}
+.content__header{
+    display: flex;
+    justify-content: center;
+}
+.content__header span{
+    padding-top: 8px;
+}
+.content > ol{
+    margin-top: 0;
+
+}
+.content a{
+    text-decoration: none;
+}
+.content a:hover {
+    text-decoration: red;
+    color: red;
+}
+.subheader{
+font-size: 20px;
+}
+.list{
+    height: 800px;
+    column-width: 30em;
+}
