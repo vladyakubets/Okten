@@ -1,5 +1,5 @@
 .container {
-    /*width: 80vw;*/
+    width: 80vw;
     border: 2px solid red;
     /*box-sizing: border-box;*/
     margin: 0 auto;
@@ -242,4 +242,9 @@
     position: absolute;
     left: 30%;
     top: 50%;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 150px;
 }
