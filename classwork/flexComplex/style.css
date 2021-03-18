@@ -1,0 +1,245 @@
+.container {
+    /*width: 80vw;*/
+    border: 2px solid red;
+    /*box-sizing: border-box;*/
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.header {
+    background-color: #ff2bf2;
+}
+
+.headerBox {
+    height: 200px;
+    background-color: #ff2bf2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header__white {
+    width: 70%;
+    height: 60%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__black {
+    background-color: black;
+    width: 70%;
+    height: 50%;
+}
+
+.menuBox {
+    background-color: slategray;
+    height: 160px;
+    flex-direction: column;
+
+}
+
+.menu {
+    /*height: 100%;*/
+    flex-grow: 11;
+    margin-bottom: 15px;
+}
+
+.menu div {
+    flex-grow: 1;
+}
+
+.menu > div:nth-child(1) {
+    background-color: red;
+}
+
+.menu > div:nth-child(2) {
+    background-color: orange;
+}
+
+.menu > div:nth-child(3) {
+    background-color: #4b97ff;
+}
+
+.menu > div:nth-child(4) {
+    background-color: yellow;
+}
+
+.main__bottom {
+    height: 500px;
+}
+
+.main__leftBox {
+    background-color: #00a928;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.main__left {
+    background-color: #00a928;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.left {
+    background-color: orange;
+    flex-grow: 1;
+}
+
+.left__box {
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+}
+
+.left__bot {
+    flex-grow: 7;
+}
+
+.a-left {
+    flex-grow: 1;
+    background-color: #ffe4f6;
+}
+
+.b-left {
+    flex-grow: 1;
+    background-color: yellow;
+}
+
+.main__center {
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.center__header {
+    background-color: #4b97ff;
+    flex-grow: 2;
+
+}
+
+.center__left {
+    background-color: red;
+    flex-grow: 1;
+}
+
+.center__bottom {
+    flex-grow: 11;
+}
+
+.center__center {
+    flex-grow: 1;
+    flex-direction: column;
+    max-width: 33.33%;
+
+}
+
+.a-centr {
+    flex-grow: 1;
+    background-color: yellow;
+
+}
+
+.A-c {
+    background-color: orange;
+    flex-grow: 2;
+}
+
+.b-c, .c-c {
+    flex-grow: 5;
+}
+
+.C-c {
+    background-color: yellow;
+    flex-grow: 2;
+}
+
+.D-c {
+    background-color: orange;
+    flex-grow: 1;
+}
+
+.B-c {
+    background-color: red;
+    flex-grow: 1;
+}
+
+.A-c, .B-c, .C-c, .D-c {
+    max-width: 50%;
+}
+
+.center__right {
+    flex-grow: 1;
+    background-color: orange;
+}
+
+.main__rightBox {
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: blue;
+}
+
+.main__right {
+    flex-grow: 11;
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+
+
+}
+
+.main__right > div {
+    flex-grow: 1;
+    width: 33.33%;
+
+}
+
+.main__right > div:nth-child(6) {
+    background-color: orange;
+}
+.main__right > div:nth-child(9) {
+    background-color: orange;
+}
+.main__right > div:nth-child(8) {
+    background-color: yellow;
+}
+.main__right > div:nth-child(11) {
+    background-color: yellow;
+}
+.main__right > div:nth-child(10) {
+    background-color: #4b97ff;
+}
+.main__right > div:nth-child(13) {
+    background-color: #4b97ff;
+}
+
+.fifth{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.fifthb{
+
+    align-items: center;
+}
+.text{
+    position: relative;
+    width: 67.77%;
+    height: 30%;
+    line-height: 0;
+    background-color: black;
+    color: aqua;
+}
+.text1{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+}
