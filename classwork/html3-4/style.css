@@ -34,7 +34,7 @@
 }
 
 
-.header , .footer{
+.header, .footer {
     height: 10vh;
 }
 
@@ -56,11 +56,15 @@
     flex-direction: column;
 }
 
-.article__box{
+.article__box {
     padding: 0;
-}.article__box > p{
+}
+
+.article__box > p {
     margin-left: 0;
-}.article__box > aside{
+}
+
+.article__box > aside {
     margin-right: 0;
 }
 
