@@ -97,16 +97,16 @@ for (const item of arr3) {
 
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
 let arr4 = [];
-arr[0] = 16;
-arr[1] = 156;
-arr[2] = true;
-arr[3] = 19.5;
-arr[4] = false;
-arr[5] = 'asd';
-arr[6] = 12.5;
-arr[7] = 166;
-arr[8] = 'fqwr';
-arr[9] = false;
+arr4[0] = 16;
+arr4[1] = 156;
+arr4[2] = true;
+arr4[3] = 19.5;
+arr4[4] = false;
+arr4[5] = 'asd';
+arr4[6] = 12.5;
+arr4[7] = 166;
+arr4[8] = 'fqwr';
+arr4[9] = false;
 for (let i = 0; i < arr4.length; i++) {
     console.log(arr4[i]);
 
