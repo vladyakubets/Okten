@@ -122,17 +122,17 @@ let users = [{
 
 //3) За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
 //    Блок з адресою зробити окремим блоком, з блоками для кожної властивості
-let uDiv, test;
-for (let i = 0; i < users.length; i++) {
-    uDiv = document.createElement("div");
-    uDiv.style.display = 'flex';
-    uDiv.style.marginBottom = '15px';
-    uDiv.style.lineHeight = '25px';
-    uDiv.innerHTML = `<div>Name: ${users[i].name}<br>Age: ${users[i].age}<br>Status: ${users[i].status}</div>` +
-        `<div><div>Country: ${users[i].address.country}</div><div>City: ${users[i].address.city}</div>`+
-        `<div>Street: ${users[i].address.street}</div><div>House: ${users[i].address.houseNumber}</div>`;
-    uDiv.lastChild.style.marginLeft = '20px';
-
-
-    document.body.appendChild(uDiv);
-}
+// let uDiv, test;
+// for (let i = 0; i < users.length; i++) {
+//     uDiv = document.createElement("div");
+//     uDiv.style.display = 'flex';
+//     uDiv.style.marginBottom = '15px';
+//     uDiv.style.lineHeight = '25px';
+//     uDiv.innerHTML = `<div>Name: ${users[i].name}<br>Age: ${users[i].age}<br>Status: ${users[i].status}</div>` +
+//         `<div><div>Country: ${users[i].address.country}</div><div>City: ${users[i].address.city}</div>`+
+//         `<div>Street: ${users[i].address.street}</div><div>House: ${users[i].address.houseNumber}</div>`;
+//     uDiv.lastChild.style.marginLeft = '20px';
+//
+//
+//     document.body.appendChild(uDiv);
+// }
