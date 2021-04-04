@@ -282,41 +282,41 @@
 //// ******************* НАЗАД В МИНУЛЕ *********************** //
 // Створити функцію яка :
 // - Додає в боді блок з текстом "Hello owu"
-function hello() {
-    let div = document.createElement('div');
-    div.innerText = 'Hello owu';
-    document.body.appendChild(div);
-}
-
-hello();
+// function hello() {
+//     let div = document.createElement('div');
+//     div.innerText = 'Hello owu';
+//     document.body.appendChild(div);
+// }
+//
+// hello();
 
 // - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
-function hello2(type, text) {
-    let div = document.createElement(`${type}`);
-    div.innerText = `${text}`;
-    div.id = 'divka';
-    document.body.appendChild(div);
-}
-
-hello2('div', 'asdsadasdasd');
+// function hello2(type, text) {
+//     let div = document.createElement(`${type}`);
+//     div.innerText = `${text}`;
+//     div.id = 'divka';
+//     document.body.appendChild(div);
+// }
+//
+// hello2('div', 'asdsadasdasd');
 
 
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
-let cars = ['audi', 'bmw', 'dziguli'];
-
-function carsList(cars, elementId) {
-    let ul = document.createElement(`ul`);
-    for (const car of cars) {
-        let li = document.createElement(`li`);
-        li.innerText = `${car}`;
-        ul.appendChild(li);
-    }
-    let idTeg = document.getElementById(`${elementId}`);
-    idTeg.appendChild(ul);
-
-}
-
-carsList(cars, 'divka');
+// let cars = ['audi', 'bmw', 'dziguli'];
+//
+// function carsList(cars, elementId) {
+//     let ul = document.createElement(`ul`);
+//     for (const car of cars) {
+//         let li = document.createElement(`li`);
+//         li.innerText = `${car}`;
+//         ul.appendChild(li);
+//     }
+//     let idTeg = document.getElementById(`${elementId}`);
+//     idTeg.appendChild(ul);
+//
+// }
+//
+// carsList(cars, 'divka');
 
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
 
@@ -325,26 +325,26 @@ carsList(cars, 'divka');
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
 // Для кожної властивості створити всередені блока автомоблія свій блок
-let cars2 = [
-    {brand: 'audi', model: 'a4', price: '15000'},
-    {brand: 'bmw', model: 'm5', price: '30000'},
-    {brand: 'dziguli', model: 'forever', price: '1000'}
-];
-
-function carsBlock(cars, elementId) {
-    let carDiv;
-    let carLi;
-    let idTeg = document.getElementById(`${elementId}`);
-    for (const car of cars) {
-        carDiv = document.createElement('div');
-        for (const key in car) {
-            carLi = document.createElement('div');
-            carLi.innerText = `${key}: ${car[key]}`;
-            carDiv.appendChild(carLi);
-        }
-        idTeg.appendChild(carDiv);
-    }
-}
-
-carsBlock(cars2, 'divka'); // id divka додається в функції hello2 на дві функції вище!!!
+// let cars2 = [
+//     {brand: 'audi', model: 'a4', price: '15000'},
+//     {brand: 'bmw', model: 'm5', price: '30000'},
+//     {brand: 'dziguli', model: 'forever', price: '1000'}
+// ];
+//
+// function carsBlock(cars, elementId) {
+//     let carDiv;
+//     let carLi;
+//     let idTeg = document.getElementById(`${elementId}`);
+//     for (const car of cars) {
+//         carDiv = document.createElement('div');
+//         for (const key in car) {
+//             carLi = document.createElement('div');
+//             carLi.innerText = `${key}: ${car[key]}`;
+//             carDiv.appendChild(carLi);
+//         }
+//         idTeg.appendChild(carDiv);
+//     }
+// }
+//
+// carsBlock(cars2, 'divka'); // id divka додається в функції hello2 на дві функції вище!!!
 // // ******************* НАЗАД В МИНУЛЕ *********************** //
