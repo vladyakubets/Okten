@@ -523,7 +523,47 @@
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
-
+//
 // let car = {
-//     model:
+//     model: 'nemo',
+//     manufacturer: 'Citroen',
+//     yearOfProduction: 2015,
+//     maxSpeed: 150,
+//     engineVolume: 1.3,
+//     drive: function (){
+//         console.log('ідемо зі швидкістю', this.maxSpeed, 'на годину');
+//     },
+//     info: function (){
+//         console.log(this);
+//     },
+//     increaseMaxSpeed: function (newSpeed){
+//         if (newSpeed < this.maxSpeed) {
+//             return console.log('Нова швидкість менша за поточну, задайте швидкість більшу ніж', this.maxSpeed);
+//         }
+//         this.maxSpeed = newSpeed;
+//         console.log('Нова максимальна швидкість', this.maxSpeed);
+//     },
+//     changeYear: function (newValue){
+//         this.year = newValue;
+//         console.log('Новий рік випуску', this.year);
+//     },
+//     addDriver: function (driver){
+//         this.driver = driver;
+//         console.log(this.driver);
+//     }
+//
 // }
+// let driver = {
+//     name: 'alexandro',
+//     surName: 'shumacher',
+//     age: 25
+// }
+//
+// console.log(car);
+// car.drive();
+// car.info();
+// car.increaseMaxSpeed(20)
+// car.increaseMaxSpeed(200)
+// car.changeYear(2016);
+// car.addDriver(driver);
+// console.log(car);
