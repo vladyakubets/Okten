@@ -1,29 +1,32 @@
 import getPosts from '../../services/api'
 import {useEffect, useState} from "react";
 import Post from "./post/post";
-
+import './posts.css';
 
 export default function Posts() {
     let [posts, setPosts] = useState([]);
-    let [post, setPost] = useState({});
+    let [post, setPost] = useState(null);
 
     useEffect(() => {
         getPosts().then(value => setPosts(value.data))
     }, [])
 
-    const desc = (id) => {
+    const findUser = (id) => {
         post = posts.find(value => value.id === id)
-        console.log(post.body);
+        setPost(post);
     }
-
-    return <div>
-        <div>
+    const deletePost = (id) => {
+        setPosts(posts.filter((value, index) => value.id !== id));
+    }
+    return <div className={'wrapper'}>
+        <div className={'posts-wrap'}>
             {
                 posts.map(value =>
                     <Post
                         key={value.id}
                         data={value}
-                        desc={desc}
+                        findUser={findUser}
+                        deletePost={deletePost}
                     />)
 
             }
@@ -31,7 +34,7 @@ export default function Posts() {
         </div>
         <div>
             {
-                post && <h2>{post.body}</h2>
+                post && <div><h3>user {post.userId} post body:</h3><p>{post.body}</p></div>
             }
         </div>
 

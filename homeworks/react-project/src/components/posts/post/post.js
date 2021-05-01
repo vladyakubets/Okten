@@ -1,6 +1,7 @@
-export default function Post({data, desc}){
-    return <div>
+export default function Post({data, findUser,deletePost}){
+    return <div className={'post'}>
         <h4>№{data.id}. {data.title}</h4>
-        <button onClick={() => desc(data.id)}>show description</button>
+        <button onClick={() => findUser(data.id)}>show description</button>
+        <button onClick={() => deletePost(data.id)}>delete post</button>
     </div>
 }
