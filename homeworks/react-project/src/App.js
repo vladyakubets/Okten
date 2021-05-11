@@ -7,6 +7,7 @@ import {
     Link
 } from "react-router-dom";
 import Users from "./components/users/users";
+import UserDetails from "./components/users/user-details/user-details";
 
 function App() {
     return (
@@ -26,12 +27,16 @@ function App() {
                         </ul>
                     </nav>
                     <Switch>
-                        <Route path="/posts">
-                            <Posts />
-                        </Route>
-                        <Route path="/users">
-                            <Users />
-                        </Route>
+                        <Route exact={true} path={'/posts'} render={(props) => <Posts/>}/>
+
+
+                        <Route exact={true} path={'/users'} render={(props) => <Users {...props}/>}/>
+                        <Route exact={true} path={'/users/:id'} render={(props)=> {
+                            console.log(props);
+                            let {match:{params:{id}}}=props;
+                            return <UserDetails userId={id}/>
+
+                        }}/>
                     </Switch>
                 </div>
             </Router>
