@@ -12,4 +12,4 @@ async function getInventory() {
     return await axiosInstance.get('inventory');
 }
 
-export {getCast, getInventory};
+export {getCast, getInventory,axiosInstance};
