@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import './users.css';
 import User from "./user/user";
 
-export default function Users({match:{url}}) {
+export default function Users({match: {url}}) {
     let [users, setUsers] = useState([]);
 
     useEffect(() => {

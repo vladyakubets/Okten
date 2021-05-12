@@ -1,18 +1,16 @@
 import {useEffect, useState} from "react";
-import {axiosInstance, getUsers} from "../../../services/api";
+import {axiosInstance} from "../../../services/api";
 
-export default function PostDetails({postId}) {
-    let [post, setPost] = useState(null);
+export default function PostDetails(props) {
+    let {location: {state}} = props;
+    let [user, setUser] = useState(null);
     useEffect(() => {
-        axiosInstance(`posts/` + postId).then(value => setPost(value.data))
-    }, [])
-    console.log(post);
+        axiosInstance(`${'users/?id=' + state.userId}`).then(value => setUser(value.data[0]))
+    }, [props.match.params.id])
     return (<div>
         {
-            post && <div>
-                <h3>title: {post.title}</h3> <br/>
-                body: {post.body} <br/>
-            </div>
+            user && <div>{user.name} posted this post</div>
         }
+
     </div>)
 }

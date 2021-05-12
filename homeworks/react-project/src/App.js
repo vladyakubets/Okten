@@ -31,15 +31,14 @@ function App() {
                     <Switch>
                         <Route exact={true} path={'/posts'} render={(props) => <Posts {...props}/>}/>
                         <Route exact={true} path={'/posts/:id'} render={(props)=> {
-                            let {match:{params:{id}}}=props;
-                            return <PostDetails postId={id}/>
+                            return <PostDetails {...props}/>
 
                         }}/>
 
+
                         <Route exact={true} path={'/users'} render={(props) => <Users {...props}/>}/>
                         <Route exact={true} path={'/users/:id'} render={(props)=> {
-                            let {match:{params:{id}}}=props;
-                            return <UserDetails userId={id}/>
+                            return <UserDetails {...props}/>
 
                         }}/>
                     </Switch>

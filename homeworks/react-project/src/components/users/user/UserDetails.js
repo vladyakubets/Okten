@@ -1,21 +1,17 @@
 import {useEffect, useState} from "react";
-import {axiosInstance, getUsers} from "../../../services/api";
+import {axiosInstance} from "../../../services/api";
+import Post from "../../posts/post/post";
 
-export default function UserDetails({userId}){
-    let [user, setUser] = useState(null);
-    useEffect(()=>{
-        axiosInstance(`users/`+userId).then(value => setUser(value.data))
-    },[])
+export default function UserDetails(props) {
+    let {match: {params: {id}, url}} = props;
+    let [posts, setPosts] = useState([]);
 
-    return(<div>
+    useEffect(() => {
+        axiosInstance(`posts/?userId=${id}`).then(value => setPosts(value.data))
+    }, [])
+    return (<div>
         {
-            user && <div>
-                Name: {user.name} <br/>
-                Phone: {user.phone} <br/>
-                Email: {user.email} <br/>
-                Address: {user.address.city} - {user.address.street} - {user.address.suite} <br/>
-                Company: {user.company.name} <br/>
-            </div>
+            posts.map(value => <Post key={value.id} data={value} url={url}/>)
         }
     </div>)
 }

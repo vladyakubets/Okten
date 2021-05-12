@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import Post from "./post/post";
 import './posts.css';
 
-export default function Posts({match:{url}}) {
+export default function Posts({match: {url}}) {
     let [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -18,7 +18,7 @@ export default function Posts({match:{url}}) {
                     <Post
                         key={value.id}
                         data={value}
-url={url}
+                        url={url}
                     />)
 
             }
