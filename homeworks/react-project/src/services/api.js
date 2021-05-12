@@ -12,6 +12,6 @@ async function getUsers() {
     return await axiosInstance.get('users');
 }
 
-export {getPosts, getUsers};
+export {getPosts, getUsers,axiosInstance};
 
 
