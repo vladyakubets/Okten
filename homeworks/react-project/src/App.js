@@ -6,8 +6,10 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import Counter from "./components/Counter/Counter";
 import Home from "./components/Home/Home";
+import Posts from "./components/posts/Posts";
+import Users from "./components/users/Users";
+import Comments from "./components/comments/Comments";
 
 function App() {
     return (
@@ -19,7 +21,13 @@ function App() {
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/counter">Counter</Link>
+                            <Link to="/posts">Posts</Link>
+                        </li>
+                        <li>
+                            <Link to="/users">Users</Link>
+                        </li>
+                        <li>
+                            <Link to="/comments">Comments</Link>
                         </li>
 
                     </ul>
@@ -27,7 +35,9 @@ function App() {
 
 
                 <Switch>
-                    <Route path="/counter" component={Counter}/>
+                    <Route path="/posts" component={Posts}/>
+                    <Route path="/users" component={Users}/>
+                    <Route path="/comments" component={Comments}/>
                     <Route path="/" component={Home}/>
                 </Switch>
             </div>
