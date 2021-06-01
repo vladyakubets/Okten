@@ -1,0 +1,6 @@
+.wrap{
+  display: flex;
+}
+.posts{
+  width: 50%;
+}

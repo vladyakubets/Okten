@@ -8,13 +8,11 @@ import {Post} from "../../../models/Posts";
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
-  public posts: Post[];
-  @Input()
-  userID:number;
+  posts: Post[];
   constructor( private postService: PostService) {}
 
   ngOnInit(): void {
-    this.postService.getPostsOfUser(this.userID).subscribe(value => this.posts = value);
+    this.postService.getPosts().subscribe(value => this.posts = value);
   }
 
 }

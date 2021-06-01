@@ -12,7 +12,7 @@ export class PostService {
   constructor(private httpClient: HttpClient) {
 
   }
-  getPostsOfUser(id:number) :Observable<Post[]>{
-    return this.httpClient.get<Post[]>(this.url + `?userId=` +id );
+  getPosts() :Observable<Post[]>{
+    return this.httpClient.get<Post[]>(this.url);
   }
 }
